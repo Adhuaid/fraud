@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        border-radius: 40px;
+    padding: 15px;
+    padding-inline: 19px;
+    font-size: 15px;
+    padding-right: 122px;
+    
+    }
+    body{
+        background-image: url("/static/styles/fraudimg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #mainlogin{
+        background: rgba(255, 255, 255, 0.7); 
+        padding: 57px;
+    }
+    button:hover{
+        background-color: rgb(204, 203, 203);
+    }
+</style>
+<body style="text-align: center;">
+    <div class="log" style="margin-left: 62rem;margin-top: 362px;margin-right: 51rem;">
+    <div id="mainlogin" style="margin-left: -77px;margin-right: 88px; border-radius: 35px; "> 
+        <h1>Login</h1>
+        <form action="/login" method="post">
+        <div class="user" style="margin-top: 32px;">
+            <input type="text" placeholder="Username"/>
+            <img style="height: 17px;width: 17px;margin-left: -36px;" src="/static/styles/user.png" alt="user"/>
+        </div>
+        <div class="pass" style="margin-top: 24px;">
+            <input type="password" placeholder="Password">
+            <img style="height: 17px;width: 17px;margin-left: -36px;" src="/static/styles/lock.png" alt="lock"/>
+        </div>
+        <div class="check" style="margin-top: 17px;margin-left: -162px;">
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="checkbox">Remember me?</label>
+        </div><br>
+        <button type="submit" style="margin-left: 21px;padding: 14px;padding-inline: 144px;border-radius: 40px;font-size: 16px;margin-top: -13px;">Login</button>
+         </form>
+        <p>Don't have an account? <a href="{{url_for('register')}}" style="text-decoration: none;">Register</a></p>
+    </div>
+</div>
+        
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <style>
+       
+        .welcome {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1.3s ease-in-out, visibility 1.1s ease-in-out;
+        }
+
+        
+        .welcome.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .headfr {
+            width: 100%;
+            overflow: hidden; /* Hides the content when it goes out of view */
+            white-space: nowrap;
+        }
+
+        .headfr{
+            display: inline-block;
+            animation: moveText 45s linear infinite; /* Creates the continuous animation */
+            font-size: 50px;
+            padding-left: 100%; /* Start from outside the left edge */
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(-100%); /* Starts from off-screen (left) */
+            }
+            100% {
+                transform: translateX(100%); /* Moves to off-screen (right) */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <img class="logo" src="/static/styles/logo.png" alt="logo" height="50px" width="50px" />
+        <h1 style="margin-top: 10px;font-size:25px; font-family: emoji;">TRACKER</h1>
+        <ul class="lists">
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a> 
+            <a href=""><li>Courses</li></a>
+            <a href="prices.html"><li>Prices</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="login.html"><p>Log In</p></a>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <div class="dis" style="padding-bottom: 321px;">
+            <p class="p1" style="margin-top: 7rem; padding-top: 270px;margin-left: 7rem;font-size: 54px;font-weight: 900;">
+                Identifying Threats,<br> Building Trust
+            </p>
+            <p class="p2" style="margin-left: 116px;font-size: 18px;margin-top: 11px;">
+                Fraud thrives in darkness; we bring it to light.
+            </p>
+            <a href="#wel" >
+                <p id="get-started" style="margin-left: 10rem;margin-top: 2rem;border: 1px solid;max-width: 99px;padding-left: 36px;padding: 10px;padding-left: 31px;border-radius: 25px;">
+                    Get Started
+                </p>
+            </a>
+        </div>
+    </div>
+
+    <div id="wel" style="margin-top: 23rem;padding-bottom: 11rem;">
+        <h2 class="headfr" style="margin-top:12rem ;">Fraud Detection in Financial Transaction</h2>
+        <div class="welcome" id="welcome-section" style="margin-left: 53rem;">
+            <h1 style="margin-top: 105px;;font-size: 50px;">Welcome to Elevate</h1>
+            <h3 style="font-size: 25px;font-family: emoji;max-width: 43rem;font-family: emoji;margin-left: -100px; text-align: justify; margin-top: 23px;">
+                We’re thrilled to have you here! At Elevate, we prioritize your experience, ensuring that navigating our site is seamless and enjoyable.
+                Explore our site to discover everything we offer. We’re excited to help you on your journey!.At Elevate, our mission is simple —
+                 to empower businesses with the knowledge and technology they need to stay one step ahead of fraud. In today’s rapidly 
+                 evolving digital landscape, security is not a luxury; it’s a necessity. That’s why we offer comprehensive solutions 
+                 that are tailored to your needs, 
+                helping you safeguard your business while building trust with your customers.
+            </h3>
+           <a href="login.html"> <button style="margin-top: 44px;padding-block: 27px;font-size: 21px;padding-inline: 58px;border-radius: 12px;margin-left: 22px;background-color: #3c78fa;color: white;
+        ">Click here to Continue</button></a>
+        </div>
+       
+    
+    </div>
+    <script>
+        
+        document.getElementById('get-started').addEventListener('click', function(event) {
+            
+            
+           
+            const welcomeSection = document.getElementById('welcome-section');
+            welcomeSection.classList.add('visible'); 
+        });
+    </script>
+    
+</body>
+</html>

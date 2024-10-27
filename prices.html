@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="stylesheet" href="/static/styles/main.css">
+</head>
+<style>
+    .con p{
+        max-width: 535px;
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 55rem;
+    margin-top: -161px;
+    padding-bottom: 7rem;
+    }
+    span{
+        font-size: 23px;
+    color: burlywood;
+    }
+    .paycon p{
+        color: lightslategrey;
+        margin-top: 10px;
+    }
+    .pay h2{
+        background-color: lightgrey;
+        margin-left: -43px;
+        padding: 10px;
+        padding-block: 19px;
+        padding-left: 95px;
+    }
+    .button1{
+        padding-block: 12px;
+    padding-inline: 100px;
+    font-size: 19px;
+    margin-left: -43px;
+    margin-top: 50px;
+    }
+    body{
+        height: 100vh;
+    }
+    .buscon{
+        color: lightslategrey;
+        margin-top: 10px;
+        font-size: 22px;
+        margin-right: -34px;
+    }
+    .button2{
+        padding-block: 15px;
+    padding-inline: 179px;
+    margin-top: 31px;
+    font-size: 19px;
+    margin-left: -54px;
+    }
+    .pay3 h2{
+        padding-block: 19px;
+    background-color: lightgrey;
+    padding-inline: 98px;
+    margin-left: -55px;
+    }
+    .button3{
+        padding-block: 15px;
+    padding-inline: 179px;
+    margin-top: 31px;
+    font-size: 19px;
+    margin-left: -54px;
+
+    }
+    @keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Applying the animation to the headings */
+h1 {
+    animation: fadeInSlideUp 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+.sub h1,p{animation-delay: 0.3s;
+
+}
+.sub p{
+    margin-top: 1px;
+    background-color: lightsteelblue;
+    padding-block: 24px;
+    font-size: 24px;
+    padding-inline: 50px;
+    margin-left: -5px;
+    margin-right: -5px;
+    border-radius: 6px;
+    margin-bottom: -5px;
+}
+.btn{
+    padding-block: 12px;
+    font-size: 20px;
+    padding-inline: 53px;
+    margin-top: 2px;
+}
+</style>
+<body>
+
+    <div id="main">
+        <img class="logo" src="/static/styles/logo.png" alt="logo" height="50px" width="50px" />
+        <h1 style="margin-top: 10px;font-size:25px; font-family: emoji;">TRACKER</h1>
+        <ul class="lists">
+            <a href="main.html"><li>Home</li></a>
+            <a href=""><li>About</li></a> 
+            <a href=""><li>Courses</li></a>
+            <a href="prices.html"><li>Prices</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="login.html"><p>Log In</p></a>
+        </ul>
+    </div>
+    <div class="con" style="margin-top: 90px;
+    text-align: center;background-color: black;color:aliceblue;">
+    <h1 style="font-size: 55px;font-weight: 600;padding-top: 79px;padding-bottom: 176px;">Pricing</h1>
+    <p>we understand that protecting your financial transactions from fraud is critical for
+         your business's success and reputation. Our advanced fraud detection services utilize cutting-edge technology 
+         and industry expertise to safeguard your financial operations. Below, you will find our Pricing Plans designed 
+         to meet varied business needs, ensuring you can tailor the services to your requirements.</p>
+        </div>
+        <div class="home">
+            <p style="padding-left: 19rem;padding-top: 25px; font-size: 26px;background-color: grey;color: black;padding-bottom: 24px;"><a href="main.html">Home</a>/Pricing</p>
+        </div>
+        <div class="paym2" style="display:flex ;">
+        <div class="pay" style="    margin-top: 6rem;margin-left: 12rem;">
+            <div class="free" style="padding-left: 43px;margin-right: 113rem;border: 1px solid rgb(189, 183, 183);">
+            <h2>Free</h2>
+            <p style="font-size: 40px;margin-top: 30px;"><sup>$</sup>0 <span> /month</span> </p>
+            <div class="paycon" style="font-size: 22px;">
+            <p>Api's for limited access</p>
+            <p>Alert for small volume</p>
+            <p>Basic risk scoring</p>
+            <button class="button1">Buy now</button>
+        </div>
+        </div>
+        </div>
+        <div class="pay2" style="margin-left: -100rem;margin-top: 94px;border: 1px solid lightgrey;padding-left: 55px;padding-right: 35px;">
+            <div class="business" style="background-color: lightgrey;padding-block: 18px;margin-left: -55px;padding-left: 133px;margin-right: -35px;">
+                <h2>Standard</h2>
+            </div>
+            
+                <p style="font-size: 40px;margin-top: 30px;"><sup>$</sup>50<span> /month</span> </p>
+                <div class="buscon">
+                     <p>Real-Time Transaction Monitoring</p>
+                     <p>Risk Scoring for Transactions</p>
+                     <p>Anomaly Detection Systems</p>
+                     <p>Identity Verification and Authentication</p>
+                     <button class="button2">Buy now</button>
+                </div>
+                
+        </div>
+        <div class="pay3" style="margin-left: 192px;margin-top: 96px;;border: 1px solid lightgrey;padding-left: 55px;">
+            <h2>Premium</h2>
+            <div class="premium">
+                
+                    <p style="font-size: 40px;margin-top: 30px;"><sup>$</sup>100<span> /month</span> </p>
+                <div class="premcon" style="font-size: 22px;color: lightslategrey;margin-top: 5px;">
+                    <p>Customizable Fraud Rules</p>
+                    <p>Multi-Layer Authentication</p>
+                    <p>Dedicated Fraud Analysts and Support</p>
+                    <p>Real-Time Alerts and Reporting</p>
+                    <button class="button3">Buy now</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="sub" style="margin-left: 114px;margin-top: 144px;padding: 5px;border: 1px solid;margin-bottom: 119px;">
+            <h1 style="margin-left: 18px;">Get Your Discount</h1>
+            <h3 style="margin-left: 62px;color: dimgrey;font-size: larger;margin-top: 13px;">Use code below</h3>
+            <button class="btn" onclick="hello()">Click here to display</button>
+            <p class="p1">************</p>
+            
+        </div>
+    </div>
+    <script>
+        const p1=document.querySelector(".p1")
+        function hello(){
+            p1.innerHTML = "code: SAVE10NOW";
+        }
+    </script>
+</body>
+</html>
